@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>injira</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e9ecef;
+
+      background-image: url('./imageBack/weather.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+      .form-container {
+          background-color: white;
+          padding: 30px;
+          border-radius: 10px;
+          background-image: url('./product/product (7).jpeg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+          width: 350px;
+          text-align: center;
+          border: 5px solid green;
+      }
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+      .form-group label {
+          display: block;
+          margin-bottom: 5px;
+          color: whitesmoke;
+          font-weight: bold;
+      }
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .form-group input:focus, .form-group select:focus {
+      border-color: #4CAF50;
+    }
+      .submit-btn {
+          width: 100%;
+          padding: 12px;
+          background-color: #4CAF50;
+          background-image: url('./imageBack/country4.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          border: 2px solid red;
+      }
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+
+      .form-container h2 {
+          color: whitesmoke;
+          font-style: bold;
+      }
+  </style>
+</head>
+<body>
+    <div class="form-container">
+        <form id="LoginForm">
+            <h2>injira muri konti yawe</h2>
+            <div class="form-group">
+                <label for="district">amazina yawe</label>
+                <input type="text" id="name" name="name" placeholder="injiza amazina yawe">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">nimero ya telephone</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}" placeholder="injiza nimero ya telephone">
+            </div>
+
+            <button type="submit" class="submit-btn">injira</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('LoginForm');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form from submitting normally
+
+            // If you want, you can add validation checking here
+
+            // After form is filled, redirect to another page
+            window.location.href = "post.html"; // Change "success.html" to your file
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>kwiyandikisha</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e9ecef;
+      
+      background-image: url('./imageBack/weather.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+      border: 5px solid white;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      background-color: white;
+      
+      background-image: url('./imageBack/country.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 450px;
+      border: 5px solid red;
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .form-group input:focus, .form-group select:focus {
+      border-color: #4CAF50;
+    }
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      
+      background-image: url('./imageBack/country.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      
+      border: 2px solid red;
+      
+      transition: background-color 0.3s;
+    }
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+    
+    label
+    {
+    
+    color:orange;
+    
+    }
+    
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>iyandikishe na konti nshashya</h2>
+  <form action="#" method="post">
+    <div class="form-group">
+      <label for="name">Amazina yawe</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    
+
+    <div class="form-group">
+      <label for="country">igihugu urimo</label>
+      <select id="country" name="country" required>
+        <option value="">hitamo igihugu</option>
+        <option value="Nepal">rwanda</option>
+        <option value="India">burundi</option>
+        <option value="USA">tanzania</option>
+        <option value="Other">uganda</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="country">akarere uherereyemo</label>
+      <select id="country" name="country" required>
+        <option value="">hitamo akarere</option>
+        <option value="musanze">musanze</option>
+        <option value="burera">burera</option>
+        <option value="gakenke">gakenke</option>
+        <option value="gicumbi">gicumbi</option>
+        
+        <option value="musanze">Rulindo</option>
+        <option value="burera">gasabo</option>
+        <option value="gakenke">kicukiro</option>
+        <option value="gicumbi">nyarugenge</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="country">icyiciro</label>
+      <select id="country" name="country" required>
+        <option value="">hitamo icyiciro</option>
+        <option value="musanze">umuguzi</option>
+        <option value="burera">umucuruzi</option>
+        <option value="gakenke">Byombi</option>
+      </select>
+    </div>
+   
+
+    <div class="form-group">
+      <label for="phone">Inimero ya telephone</label>
+      <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}" placeholder="injiza nimero ya telephone">
+    </div>
+
+    <button type="submit" class="submit-btn"  onclick="window.location.href='./LoginForm.html'">iyandikishe</button>
+  </form>
+</div>
+
+</body>
+</html>

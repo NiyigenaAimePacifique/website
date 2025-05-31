@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tekana</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: cyan;
+      
+      background-image: url('./product/product.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 40;
+    }
+    
+     .form-container {
+      background-color: white;
+      
+      background-image: url('./imageBack/weather.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+      padding: 60px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 550px;
+      text-align: center;
+      border: 5px solid red;
+    }
+    
+    .form-containerx {
+      background-color: white;
+      
+      background-image: url('./imageBack/country.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+      padding: 150px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 680px;
+      text-align: center;
+      border: 3px solid white;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group input:focus, .form-group select:focus {
+      border-color: #4CAF50;
+    }
+    .container {
+      text-align: center;
+    }
+      .button {
+          background-color: blueviolet;
+          border: none;
+          color: white;
+          padding: 15px 30px;
+          margin: 10px;
+          text-align: center;
+          text-decoration: none;
+          border: 2px solid black;
+          display: inline-block;
+          font-size: 18px;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+      }
+    .button:hover {
+      background-color: black;
+    }
+    
+    .my-heading{
+    
+      font-family: 'Courier New' , Courier , monospace;
+      font-size: 40px;
+      font-style: talic;
+      font-weight: bold;
+      color: darkblue;
+    }
+    
+    h1
+    {
+         color: orange;
+         font-style:revert;
+         font-size: 64px;
+    }
+
+      h2 {
+          color: blueviolet;
+          font-size: 84px;
+          position:relative;
+          font-size-adjust:inherit;
+      }
+    
+    p
+    {
+         color: orange;
+         font-size: 64px;
+         {
+         position: relative; left: 20px; top:20px;
+         }
+    }
+    
+  </style>
+</head>
+<body>
+<div class="form-containerx">
+<h2>Tekana</h2>
+    <div class="form-container">
+        <h1>Tekana wahageze</h1>
+        <button class="button" onclick="window.location.href='./action/action.html'">Umuguzi</button>
+        <button class="button" onclick="window.location.href='./action/action.html'">Umucuruzi</button>
+        <button class="button" onclick="window.location.href='./LoginForm.html'">Konti yajye</button>
+        <button class="button" onclick="window.location.href='./curuza.html'">Curuza</button>
+        <button class="button" onclick="window.location.href='./post.html'">Sura Ibicuruza</button>
+    </div>
+  </div>
+<script>
+ /* const form = document.getElementById('LoginForm'); 
+
+  form.addEventListener('button', function(event) {
+    event.preventDefault(); // Prevent form from submitting normally
+
+    // If you want, you can add validation checking here
+
+    // After form is filled, redirect to another page
+    window.location.href = "LoginForm.html"; // Change "success.html" to your file
+  }); */
+</script>
+</body>
+</html>
